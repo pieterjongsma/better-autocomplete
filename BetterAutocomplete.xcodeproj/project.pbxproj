@@ -16,6 +16,12 @@
 		44445EF616BC59E6001653B0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44445EF516BC59E6001653B0 /* Default.png */; };
 		44445EF816BC59E6001653B0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44445EF716BC59E6001653B0 /* Default@2x.png */; };
 		44445EFA16BC59E6001653B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44445EF916BC59E6001653B0 /* Default-568h@2x.png */; };
+		44445F0716BC5FEC001653B0 /* BetterAutocompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44445F0616BC5FEC001653B0 /* BetterAutocompleteViewController.m */; };
+		44445F0B16BC6137001653B0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44445F0916BC6137001653B0 /* MainViewController.m */; };
+		44445F0C16BC6137001653B0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44445F0A16BC6137001653B0 /* MainViewController.xib */; };
+		44445F0F16BC6237001653B0 /* GoogleAutocompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44445F0E16BC6237001653B0 /* GoogleAutocompleteViewController.m */; };
+		44445F1716BC7A44001653B0 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 44445F1616BC7A44001653B0 /* XPathQuery.m */; };
+		44445F1A16BC7A9B001653B0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44445F1916BC7A9B001653B0 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,16 @@
 		44445EF516BC59E6001653B0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		44445EF716BC59E6001653B0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		44445EF916BC59E6001653B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		44445F0516BC5FEC001653B0 /* BetterAutocompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterAutocompleteViewController.h; sourceTree = "<group>"; };
+		44445F0616BC5FEC001653B0 /* BetterAutocompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterAutocompleteViewController.m; sourceTree = "<group>"; };
+		44445F0816BC6137001653B0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		44445F0916BC6137001653B0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		44445F0A16BC6137001653B0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		44445F0D16BC6237001653B0 /* GoogleAutocompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAutocompleteViewController.h; sourceTree = "<group>"; };
+		44445F0E16BC6237001653B0 /* GoogleAutocompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAutocompleteViewController.m; sourceTree = "<group>"; };
+		44445F1516BC7A44001653B0 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		44445F1616BC7A44001653B0 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		44445F1916BC7A9B001653B0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44445F1A16BC7A9B001653B0 /* libxml2.dylib in Frameworks */,
 				44445EE416BC59E6001653B0 /* UIKit.framework in Frameworks */,
 				44445EE616BC59E6001653B0 /* Foundation.framework in Frameworks */,
 				44445EE816BC59E6001653B0 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				44445EE916BC59E6001653B0 /* BetterAutocomplete */,
+				44445F1816BC7A86001653B0 /* libs */,
 				44445EE216BC59E6001653B0 /* Frameworks */,
 				44445EE116BC59E6001653B0 /* Products */,
 			);
@@ -78,8 +96,16 @@
 		44445EE916BC59E6001653B0 /* BetterAutocomplete */ = {
 			isa = PBXGroup;
 			children = (
+				44445F0816BC6137001653B0 /* MainViewController.h */,
+				44445F0916BC6137001653B0 /* MainViewController.m */,
+				44445F0A16BC6137001653B0 /* MainViewController.xib */,
+				44445F0516BC5FEC001653B0 /* BetterAutocompleteViewController.h */,
+				44445F0616BC5FEC001653B0 /* BetterAutocompleteViewController.m */,
+				44445F0D16BC6237001653B0 /* GoogleAutocompleteViewController.h */,
+				44445F0E16BC6237001653B0 /* GoogleAutocompleteViewController.m */,
 				44445EF216BC59E6001653B0 /* AppDelegate.h */,
 				44445EF316BC59E6001653B0 /* AppDelegate.m */,
+				44445F1316BC7992001653B0 /* vendor */,
 				44445EEA16BC59E6001653B0 /* Supporting Files */,
 			);
 			path = BetterAutocomplete;
@@ -97,6 +123,31 @@
 				44445EF916BC59E6001653B0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44445F1316BC7992001653B0 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				44445F1416BC7A44001653B0 /* XPathQuery */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		44445F1416BC7A44001653B0 /* XPathQuery */ = {
+			isa = PBXGroup;
+			children = (
+				44445F1516BC7A44001653B0 /* XPathQuery.h */,
+				44445F1616BC7A44001653B0 /* XPathQuery.m */,
+			);
+			path = XPathQuery;
+			sourceTree = "<group>";
+		};
+		44445F1816BC7A86001653B0 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				44445F1916BC7A9B001653B0 /* libxml2.dylib */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +205,7 @@
 				44445EF616BC59E6001653B0 /* Default.png in Resources */,
 				44445EF816BC59E6001653B0 /* Default@2x.png in Resources */,
 				44445EFA16BC59E6001653B0 /* Default-568h@2x.png in Resources */,
+				44445F0C16BC6137001653B0 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +218,10 @@
 			files = (
 				44445EF016BC59E6001653B0 /* main.m in Sources */,
 				44445EF416BC59E6001653B0 /* AppDelegate.m in Sources */,
+				44445F0716BC5FEC001653B0 /* BetterAutocompleteViewController.m in Sources */,
+				44445F0B16BC6137001653B0 /* MainViewController.m in Sources */,
+				44445F0F16BC6237001653B0 /* GoogleAutocompleteViewController.m in Sources */,
+				44445F1716BC7A44001653B0 /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +300,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BetterAutocomplete/BetterAutocomplete-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "BetterAutocomplete/BetterAutocomplete-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -255,6 +312,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BetterAutocomplete/BetterAutocomplete-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "BetterAutocomplete/BetterAutocomplete-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -280,6 +338,7 @@
 				44445EFF16BC59E6001653B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
