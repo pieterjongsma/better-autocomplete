@@ -160,14 +160,9 @@
     
     NSNumber *animationDuration;
     [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&animationDuration];
-    
-    NSNumber *animationCurve;
-    [[notification.userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&animationCurve];
-    
-    UIViewAnimationOptions animationOptions = [animationCurve intValue];
-    
-    [UIView animateWithDuration:[animationDuration doubleValue] delay:0. options:animationOptions animations:^{
-        self.suggestionsTableView.frame = CGRectMake(0., 44., 320., newFrame.origin.y - 64.); // 64 = status bar + navigation bar
+
+    [UIView animateWithDuration:[animationDuration doubleValue] animations:^{
+        self.suggestionsTableView.frame = CGRectMake(0., 64., 320., newFrame.origin.y - 64.); // 64 = status bar + navigation bar
     } completion:NULL];
 }
 
